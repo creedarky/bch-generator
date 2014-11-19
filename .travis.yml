@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-bch-generator' ]; then cd .. && eval "mv $currentfolder generator-bch-generator" && cd generator-bch-generator; fi
+

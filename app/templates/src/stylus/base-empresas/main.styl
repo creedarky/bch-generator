@@ -1,0 +1,701 @@
+//VARIABLES	
+corporative-blue =  #002464
+corporative-blue-thin = #003772
+corporative-light-blue = #4F7593
+corporative-grei = #333
+corporative-light-grei =#F7F7F7
+white-color = #fff
+
+positive-color = #6baa1f
+informative-color = #389ad4
+caution-color = #ffc725
+atention-color =  #f77713
+
+color-opacitiy = 0.7
+grei-one = #4a4a4a
+grei-two = #bbbbbb
+grei-three = #e1e1e1
+grei-four = #ebebeb	
+border-element-blue = corporative-blue 1px solid 
+corner = 3px
+transition = all ease 0.2s
+
+//Icons Empresas
+@font-face 
+	font-family 'empresas-bch-icon'
+	src url('../assets/fonts/empresas-bch-icon.eot?-8sfot4')
+	src url('../assets/fonts/empresas-bch-icon.eot?#iefix-8sfot4') format('embedded-opentype'),url('../assets/fonts/empresas-bch-icon.woff?-8sfot4') format('woff'),url('../assets/fonts/empresas-bch-icon.ttf?-8sfot4') format('truetype'),url('../assets/fonts/empresas-bch-icon.svg?-8sfot4#empresas-bch-icon') format('svg')
+	font-weight normal
+	font-style normal
+[class^="icon-"], [class*=" icon-"] 
+	font-family 'empresas-bch-icon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+.icon-VerDetalle:before
+	content "\e60e"
+.icon-adjust:before 
+	content "\e610"
+.icon-align:before 
+	content "\e611"
+.icon-align2:before 
+	content "\e612"
+.icon-align3:before 
+	content "\e613"
+.icon-android:before 
+	content "\e615"
+.icon-left:before 
+	content "\e616"
+.icon-down:before
+	content "\e617" 
+.caret
+	width 10px
+	height 20px
+	background url('../assets/images/icon-down.png') center center no-repeat
+	border none
+	top 20%!important
+.icon-right:before 
+	content "\e618"
+.icon-apple:before 
+	content "\e619"
+.icon-archive:before 
+	content "\e61a"
+.icon-up:before 
+	content "\e61b"
+.icon-arrowhead5:before 
+	content "\e622"
+.icon-asterisk2:before 
+	content "\e625"
+.icon-ban:before 
+	content "\e626"
+.icon-book:before 
+	content "\e627"
+.icon-bookmark:before 
+	content "\e628"
+.icon-briefcase:before 
+	content "\e629"
+.icon-building:before 
+	content "\e62a"
+.icon-calendar:before 
+	content "\e62c"
+.icon-camera:before 
+	content "\e62d"
+.icon-certificate:before 
+	content "\e631"
+.icon-config:before 
+	content "\e640"
+.icon-comment:before 
+	content "\e642"
+.icon-correct:before 
+	content "\e643"
+.icon-credit:before 
+	content "\e645"
+.icon-cross:before 
+	content "\e646"
+.icon-dashboard:before 
+	content "\e647"
+.icon-desktop:before 
+	content "\e648"
+.icon-download:before 
+	content "\e64c"
+.icon-dropbox:before 
+	content "\e64d"
+.icon-envelope:before 
+	content "\e651"
+.icon-exclamation:before 
+	content "\e652"
+.icon-file:before 
+	content "\e654"
+.icon-folder:before 
+	content "\e656"
+.icon-fullscreen:before 
+	content "\e658"
+.icon-heart:before 
+	content "\e659"
+.icon-information35:before 
+	content "\e65b"
+.icon-lock:before 
+	content "\e65d"
+.icon-map:before 
+	content "\e65e"
+.icon-minus:before 
+	content "\e660"
+.icon-mobile:before 
+	content "\e662"
+.icon-move:before 
+	content "\e663"
+.icon-setting:before 
+	content "\e664"
+.icon-paper:before 
+	content "\e665"
+.icon-photo:before 
+	content "\e667"
+.icon-plus:before 
+	content "\e669"
+.icon-printing:before 
+	content "\e66a"
+.icon-question:before 
+	content "\e66b"
+.icon-refresh:before 
+	content "\e66e"
+.icon-remove:before 
+	content "\e66f"
+.icon-reply:before 
+	content "\e670"
+.icon-replyall:before 
+	content "\e671"
+.icon-search:before 
+	content "\e675"
+.icon-sign:before 
+	content "\e677"
+.icon-signout:before 
+	content "\e678"
+.icon-speech:before 
+	content "\e67a"
+.icon-spinner:before 
+	content "\e67b"
+.icon-star:before 
+	content "\e67d"
+.icon-suitcase:before 
+	content "\e680"
+.icon-table:before 
+	content "\e681"
+.icon-tag:before 
+	content "\e682"
+.icon-tags:before 
+	content "\e683"
+.icon-telephone:before 
+	content "\e684"
+.icon-text:before 
+	content "\e685"
+.icon-unlock:before 
+	content "\e687"
+.icon-upload:before 
+	content "\e688"
+.icon-warning:before 
+	content "\e68a"
+.icon-zoom:before 
+	content "\e68b"
+.icon-zoomout:before 
+	content "\e68c"
+.icon-icon-agenda:before 
+	content "\e600"
+.icon-icon-contactos:before 
+	content "\e601"
+.icon-icon-notificaciones:before 
+	content "\e602"
+.icon-icon-pendientes:before 
+	content "\e603"
+.icon-icon-negative:before 
+	content "\e60f"
+.icon-icon-file-txt:before 
+	content "\e604"
+.icon-icon-pdf:before 
+	content "\e605"
+.icon-icon-mensaje:before 
+	content "\e606"
+.icon-icon-folder:before 
+	content "\e607"
+.icon-icon-folder-open:before 
+	content "\e608"
+.icon-icon-alert:before 
+	content "\e609"
+.icon-icon-accept:before 
+	content "\e60a"
+.icon-icon-help:before 
+	content "\e60b"
+.icon-icon-lock:before 
+	content "\e60c"
+.icon-icon-picture:before 
+	content "\e60d"
+// generales demo
+body
+	background white-color
+	font-family arial, helvetica, sans-serif
+  	font-weight 300
+.clearfix
+	clear both
+	float none
+.font-demo
+	p
+		display block
+		padding 10px
+		margin 0
+		color #fff
+		text-aling center
+		font-size 12px
+.title-demo
+	font-size 25px
+	margin 20px 0
+	border-bottom 1px solid grei-four
+	padding 10px 15px
+	border-radius corner
+.side-demo
+	display none
+.form-control
+	box-shadow none
+
+//fonts
+h1
+	font-size 28px
+	font-family: 'Roboto', sans-serif;
+h2 
+	font-size 20px
+	font-family: 'Roboto', sans-serif;
+h3
+	font-size 18px
+	font-family: 'Roboto', sans-serif;
+h4
+	font-size 16px
+	font-family: 'Roboto', sans-serif;
+h5
+	font-size 14px
+	font-family: 'Roboto', sans-serif;
+h6
+	font-size 12px
+p
+	font-size 14px
+	line-height 18px
+ul, ol
+	li
+		font-size 14px
+		line-height 18px		
+
+.title, a, label
+	color corporative-blue-thin
+	font-weight 300
+
+.color-box-demo-corporative
+	div	
+		&:nth-child(1)
+			background corporative-blue
+		&:nth-child(2)
+			background corporative-blue-thin
+		&:nth-child(3)
+			background corporative-light-blue
+		&:nth-child(4)
+			background corporative-grei
+		&:nth-child(5)
+			background corporative-light-grei		
+.color-box-demo-actions
+	div	
+		&:nth-child(1)
+			background positive-color
+		&:nth-child(2)
+			background informative-color
+		&:nth-child(3)
+			background caution-color
+		&:nth-child(4)
+			background atention-color
+.color-box-demo-actions-opacity
+	div	
+		&:nth-child(1)
+			background positive-color
+			opacity color-opacitiy
+		&:nth-child(2)
+			background informative-color
+			opacity color-opacitiy
+		&:nth-child(3)
+			background caution-color
+			opacity color-opacitiy
+		&:nth-child(4)
+			background atention-color
+			opacity color-opacitiy
+.color-box-demo-secondary
+	div	
+		&:nth-child(1)
+			background grei-one
+		&:nth-child(2)
+			background grei-two
+		&:nth-child(3)
+			background grei-three
+		&:nth-child(4)
+			background grei-four
+
+.empty-value 
+	color grei-two
+.positive-value
+	color positive-color
+.standar-value
+	color corporative-blue-thin
+.informative-value
+	color informative-color
+.negative-value	
+	color atention-color
+.box-canvas
+	border 1px solid grei-three 
+	border-radius corner
+	background white-color
+	padding-top 10px
+	min-height 35px
+	margin-bottom 5px
+
+.icon-set
+	padding 0
+	li
+		width 30px
+		height 30px
+		margin 10px
+		display inline-block
+		font-size 30px
+		color grei-two
+		&:hover
+			color corporative-light-blue
+			cursor pointer
+
+.button-set
+	.btn
+		&:focus
+			outline none
+			box-shadow none
+		&:active
+			outline none
+			box-shadow none
+			
+	.btn-alternative
+		height 30px
+		font-size 12px
+		color white-color
+		border 1px solid informative-color
+		background informative-color
+		transition transition
+		&:hover
+			color white-color
+			background corporative-blue-thin
+	.btn-standar
+		height 30px
+		font-size 12px
+		color grei-one
+		border border-element
+		background grei-four
+		transition transition
+		&:hover
+			background grei-three
+	.btn-delete
+		height 30px
+		font-size 12px
+		color white-color
+		border atention-color
+		background atention-color
+		transition transition
+		&:hover
+			background atention-color
+			
+	.btn-save
+		height 30px
+		font-size 12px
+		color white-color
+		border border-element-blue
+		background corporative-blue
+		transition transition
+		&:hover
+			color white-color
+			background corporative-blue-thin
+			border-color corporative-blue-thin
+	.btn-select-drop
+		display: block;
+		font-size: 14px;
+		color: #bbb;
+		border: #e1e1e1 1px solid;
+		background: #fff;
+		width: 100%;
+		transition: all ease .2s;
+		text-align: left
+		.caret
+			float right
+			margin 5px 0 0
+			color #222
+		&:focus
+			outline none
+			box-shadow none
+	.btn-file
+		position relative
+		overflow hidden
+		input[type=file]
+			position absolute
+			top 0
+			right 0
+			min-width 100%
+			min-height 100%
+			font-size 100px
+			text-align right
+			opacity 0
+			outline none
+			background white-color
+			cursor inherit
+			display block
+	.btn-text
+		height 30px
+		font-size 12px
+		color corporative-blue-thin
+		background transparent
+		transition transition
+		&:hover
+			text-decoration underline
+		&:focus
+			outline none
+			box-shadow none
+		&:active
+			outline none
+			box-shadow none
+//Alerts notifications
+.alerts-empresas
+	.error-alert
+		background atention-color
+		opacity color-opacitiy
+		padding-top 10px
+		padding-bottom 10px
+		span, button, b
+			color white-color
+			opacity 1
+
+	.info-alert
+		background informative-color
+		opacity color-opacitiy
+		padding-top 10px
+		padding-bottom 10px
+		span, button, b
+			color white-color
+			opacity 1
+
+	.warning-alert
+		background caution-color
+		opacity color-opacitiy
+		padding-top 10px
+		padding-bottom 10px
+		span, button, b
+			color white-color
+			opacity 1
+
+	.positive-alert
+		background positive-color
+		opacity color-opacitiy
+		padding-top 10px
+		padding-bottom 10px
+		span, button, b
+			color white-color
+			opacity 1
+	.notification
+		width 255px
+		height 90px
+		font-size 12px
+		transition transition
+		.icon-not
+			font-size 30px
+			display inline-block
+			vertical-align middle
+		p
+			display inline-block
+			vertical-align middle
+			width 140px
+			color white-color
+			font-size 12px
+			margin-left 10px
+			b
+				display block
+				margin-top 5px
+		button 
+			display inline-block
+			vertical-align middle
+		&:hover
+			opacity 1
+//Validation
+.alert-validation
+	color atention-color
+	font-size  12px
+	margin 5px 0px
+
+.alert-validation-drop
+	color atention-color
+	font-size  12px
+	margin 0px
+	padding 0
+	height 0
+// Tabs
+.tab-empresas
+	.nav-tabs
+		margin-bottom 10px
+		li
+			background #fff
+			border-radius 0px
+			border none
+			font-size 14px
+			a
+				border none
+				border-bottom 1px solid white-color
+				padding 5px
+				border-radius 0px
+				color grei-one
+				cursor pointer
+			&:hover
+				background #fff
+				a
+					border none
+					background #fff
+					color grei-one
+					border-bottom 1px solid corporative-blue
+		li.active
+			a
+				border none
+				border-bottom 1px solid corporative-blue
+				color corporative-blue
+			&:hover
+				background #fff
+				a
+					border none
+					background #fff
+					border-bottom 1px solid corporative-blue
+
+// Paginator
+.pagination-empresas
+	.pagination
+		li 	
+			text-aling center
+			a
+				margin-right 5px
+				font-size 14px
+				color grei-one
+				border-color grei-three
+				border-radius corner
+				width 35px
+				height 35px
+				&:hover
+					background grei-four
+					color grei-one
+		li.active a
+			color grei-one
+			border-color grei-three
+			background grei-three
+	.pagination-select
+		margin 20px 0 
+		outline none
+		box-shadow none
+		&:focus
+			box-shadow none
+			
+// Progress
+.progress-empresas
+	.progress
+		height 5px
+		border 1px solid grei-three
+		background grei-four
+		box-shadow none
+		padding 0
+		margin 8px 0 0 0
+		.progress-bar
+			background corporative-blue
+
+// Tags
+.tags-empresas
+	.tag
+		display inline-block
+		font-size 10px
+		color white-color
+		text-aling center
+		padding 5px 10px
+		font-weight 300
+		border-radius corner
+	.standar
+		background informative-color
+	.rechazado
+		background atention-color
+	.ejecutado
+		background positive-color
+	.null
+		background grei-three
+		color grei-one
+		border 1px solid grei-two
+		margin-bottom 5px
+
+// Forms
+.forms-empresas
+	input[type="text"],input[type="mail"],input[type="number"], textarea, select
+		background white-color
+		border border-element
+		box-shadow none
+		font-size 12px
+		color grei-one
+		resize none
+		outline 0
+		font-weight 300
+		&:focus
+			box-shadow none
+			border-color grei-one
+			outline none
+	input[type="text"],input[type="mail"],input[type="number"],input[type="password"], .btn, select
+		height 30px
+		outline 0
+		box-shadow 0px 0px 0px white-color
+	.input-group
+		margin-bottom 0px
+	input:disabled
+		background corporative-light-grei
+		color grei-one
+//Acordeon
+.acordeon-empresas
+	display block
+	.panel-group
+		.panel, .panel-default
+			border none
+			border-radius 0px
+			margin-top 0
+			box-shadow none
+			.panel-heading
+				padding 0
+				background transparent
+				border 0px
+				color corporative-blue
+				.panel-title	
+					padding-left 0
+					padding-right 0
+					a
+						display block
+						padding 10px 15px
+						border-left 4px solid grei-three
+			.panel-body
+				border 0px
+				border-left 4px solid grei-two
+				background corporative-light-grei
+/*.select-no-type
+	.ui-select-bootstrap
+		.ui-select-choices
+			overflow visible
+			&:after
+				content: '';
+				width: 20px;
+				height: 30px;
+				background: #fff;
+				position: absolute;
+				top: -35px;
+				left: 2px;
+				width 99%*/
+// breadcrumb
+.breadcrumb
+	background transparent
+	.date-bread
+		float right
+		font-size 12px
+		color grei-one
+//toaster
+#toast-container
+	top 160px!important
+	div.toast
+		width 27%!important
+		padding 10px 15px 10px 50px!important
+		font-size 12px
+		margin 0 10px 0 0 
+		border-radius 0px!important
+		box-shadow 0px 0px 0px #fff
+		line-height 19px
+		margin 0 auto
+		opacity 1!important
+		button.toast-close-button
+			margin-top 6px
+	.toast-error
+		background atention-color!important

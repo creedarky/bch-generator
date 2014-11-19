@@ -1,0 +1,157 @@
+<div class="row">
+
+
+  <h1 class="page-header">
+    ¿Que viene incluido en la carpeta base?
+  </h1>
+
+  
+  <h2>Twitter Bootstrap</h2>
+
+  <p>
+      Todos los controles bootsrap asi como los estilos en formato LESS se
+      encuentran disponibles para poder usar como principal hoja de estilos.
+      Existe un archivo particular para poder sobreescribir variables y estilos
+      a la necesidad(/src/less/main.less). Para poder actualizar a la ultima version
+      de bootsrap basta con ejecutar el siguiente comando:
+  </p>
+
+  <pre>$ cd vendor/twitter-bootstrap<br />$ git pull origin master</pre>
+
+  <p>
+    Y estaría listo.
+  </p>
+
+  <h2>UI Bootstrap</h2>
+
+  <p>
+    Bootsrap a través de directivas Angular, usando la libreria <a href="http://angular-ui.github.com/bootstrap">UI Bootstrap</a>, contiene un set
+      de directivas nativas AngularJS que pueden ser extendidas. Demo:
+  </p>
+
+  <ul>
+    <li class="dropdown">
+      <a class="btn dropdown-toggle">
+        Control Dropdown
+      </a>
+      <ul class="dropdown-menu">
+        <li ng-repeat="choice in dropdownDemoItems">
+          <a>{{choice}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    No incluye jQuery.
+  </p>
+
+
+  <h2>Font Awesome</h2>
+
+  <p>
+    Es un set de iconos libres que son distribuidos como fuentes. Faciles de usar y livianos.
+    Funciona perfectamente con Bootstrap.
+  </p>
+
+  <p>
+    Todos los iconos son creados a través de Font Awesome usando sus clases, un demo:
+  </p>
+
+  <pre>&lt;i class="fa fa-flag"&gt;&lt/i&gt</pre>
+
+  <p>
+    Y obtienes: <i class="fa fa-flag"> </i>.
+  </p>
+
+
+<h2>Stylus</h2>
+        <p>
+            Es un framework css que extiende las funcionalidades de css.
+            Esto permite una mejor organización del codigo css. Para más información visita el sitio web de <a target="_blank" href="http://learnboost.github.io/stylus/">Stylus</a>
+        </p>
+
+        <p>
+            Todo el codigo stylus dentro de la carpeta se coloca en el directorio /src/stylus/Mi_archivo.styl. Este codigo es transformado a css
+            y minificado en un archivo css que se adjunta al index.
+        </p>
+
+
+        <h2>Filtros</h2>
+        <p>
+            Los filtros pueden ser agregados en el directorio "src/common/filters" y pueden ser utilizadas de la siguiente manera, usaremos como ejemplo el filtro rut localizado en filter.js:          
+        </p>
+
+        <pre>
+          { { '1111111-1' | rut } }
+        </pre>
+
+        <p>genera lo siguiente: </p>
+
+        <p>
+          {{'1111111-1' | rut}}
+        </p>
+
+
+        <h2>Directivas</h2>
+        <p>
+            Las directivas pueden ser agregadas en el directorio "src/common/directives"
+        </p>
+
+        <p>
+          Y esto generaría lo siguiente:
+        </p>
+        <prueba></prueba>
+
+        <h2>Servicios</h2>
+        <p>
+            Los servicios pueden ser agregados en el directorio "src/common/services" alli puedes encontrar un servicio de muestra. Al inyectar un servicio en tu modulo tu obtienes una instancia de ese servicio.
+        </p>    
+
+        <p>
+         Ejemplo llamado getRutService: {{fromService}}
+        </p>
+
+        <h2>Factories</h2>
+        <p>
+            Las factories pueden ser agregadas en el directorio "src/common/factories" alli puedes encontrar una factory de muestra. Al inyectar una factory en tu modulo, tu obtienes el valor que es retornado al invocar la funcion de referencia de la factory.
+        </p>       
+
+           <p>
+          Ejemplo llamado getRutFactory: {{fromFactory}}
+        </p>
+
+        <h2>Constantes</h2>
+        <p>
+            La definición de constantes se encuentra en  "src/common/constants" alli puedes encontrar constantes que están siendo utilizadas en la base.
+        </p>
+
+        <p>
+            Se necesita inyectar el paquete "WebBancoChile.constants" y luego pasarlas como argumento a la función, factoria o servicio deseado.
+            Como ejemplo, las rutas a los datos que poblan el header son leidos desde archivos .json que son referiados a través de constantes. Ver las factorias
+                <ul>
+                    <li>getDatosUsuarioFactory</li>
+                    <li>getProductosUsuarioFActory</li>
+                    <li>getUltimoAccesoFactory</li>
+                </ul>
+        </p>
+
+        <h2>Servidor Http</h2>
+        <p>
+            Debes ejecutar el comando "npm start" para poder ejecutar el servidor http.
+        </p>       
+
+        <h2>Pruebas E2E con Protractor</h2>
+        <p>
+            Debes ejecutar el comando "npm run protractor" para poder ejecutar las pruebas escritas en protractor/e2e/scenarios.js
+        </p> 
+
+           
+
+
+        
+       
+
+
+</div>
+

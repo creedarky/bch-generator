@@ -1,0 +1,271 @@
+@font-face
+  font-family helveticaneuelight
+  src url(fonts/helveticaneuelt-webfont.eot)
+  src url(fonts/helveticaneuelt-webfont.woff2) 
+  src url(fonts/helveticaneuelt-webfont.woff) 
+  src url(fonts/helveticaneuelt-webfont.ttf) 
+  font-weight normal
+  font-style normal
+@font-face
+  font-family helveticaneueitalic
+  src url(fonts/helveticaneueit-webfont.eot)
+  src url(fonts/helveticaneueit-webfont.woff2) 
+  src url(fonts/helveticaneueit-webfont.woff) 
+  src url(fonts/helveticaneueit-webfont.ttf) 
+  font-weight normal
+  font-style normal
+@font-face
+  font-family helveticaneueheavy
+  src url(fonts/helveticaneuehv-webfont.eot)
+  src url(fonts/helveticaneuehv-webfont.woff2) 
+  src url(fonts/helveticaneuehv-webfont.woff) 
+  src url(fonts/helveticaneuehv-webfont.ttf) 
+  font-weight normal
+  font-style normal
+@font-face
+  font-family helveticaneuebold
+  src url(fonts/helveticaneuebd-webfont.eot)
+  src url(fonts/helveticaneuebd-webfont.woff2) 
+  src url(fonts/helveticaneuebd-webfont.woff) 
+  src url(fonts/helveticaneuebd-webfont.ttf) 
+  font-weight normal
+  font-style normal
+
+@font-face
+  font-family helveticaneueregular
+  src url(fonts/helveticaneue-webfont.eot)
+  src url(fonts/helveticaneue-webfont.woff2) 
+  src url(fonts/helveticaneue-webfont.woff) 
+  src url(fonts/helveticaneue-webfont.ttf) 
+  font-weight normal
+  font-style normal
+
+.bch-pp-header-top
+  background-color #012464
+  & > .row
+    border-top solid 1px #324f82
+    margin-top 4px
+
+.bch-pp-barra-top
+  position relative
+  margin-top -1px
+  color #fff
+  background-color #002464
+  a
+    color #fff
+  .bch-pp-top-link
+    padding-top 11px
+    padding-bottom 11px
+    display block
+    text-decoration inherit
+  
+  .col-md-2
+    text-align center
+    padding-left 13px
+    padding-right 13px
+
+  & > .col-lg-2
+    &:nth-of-type(1):before
+      content ''
+      position absolute
+      width 29px
+      height 46px
+      left -29px
+      top -4px
+      background url('images/bancoChile/line-top-left.jpg') no-repeat
+
+  .col-lg-5
+      border-right none
+      text-align left
+      p
+        padding-bottom 1px
+        margin-bottom 1px
+
+  & > .col-lg-5
+    &:before
+      content ''
+      position absolute
+      width 29px
+      height 46px
+      right -13px
+      top -3px
+      background url('images/bancoChile/line-top-right.jpg') no-repeat
+
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-5
+    border-right solid 1px #324f82
+    border-bottom solid 1px #324f82
+
+.bch-pp-top-link
+  img
+    vertical-align middle
+    margin-right 3px
+    &:nth-of-type(2)
+      margin-right 0
+
+
+
+.bch-pp-header-middle
+  background-color #012464
+  a.bch-pp-logo-header
+    display block
+    h1
+      text-indent -99999999px
+      background-repeat no-repeat!important
+      background-position left center
+      background url('images/bancoChile/logo-banco-chile.png')
+      background-size 100% auto
+      margin-top 5%
+      z-index 9999
+
+  .bch-pp-label-banca
+    width 150px
+    height 37px
+    padding-top 7px
+    display block
+    position absolute
+    top 74px
+    background-color #194b80
+    border solid 1px #2f5d8c
+    border-bottom none
+    color #fff
+    text-align center
+    font-size 16px
+    -moz-border-radius-topleft 3px
+    -webkit-border-top-left-radius 3px
+    border-top-left-radius 3px
+    -moz-border-radius-topright 3px
+    -webkit-border-top-right-radius 3px
+    border-top-right-radius 3px
+
+.bch-pp-container-usuario-head
+  height 60px
+  margin 25px 0 26px
+  -moz-border-radius 3px
+  -webkit-border-radius 3px
+  border-radius 3px
+  border solid 1px #26457b
+
+  .col-lg-3
+    height 100%
+
+  .col-lg-2
+    height 100%
+    border-right solid 1px #26457b
+    a
+      img
+        display inline-block
+
+  .col-lg-7
+    padding-top 10px
+    border-right solid 1px #26457b
+    height 100%
+    h4
+      margin 0px 0px 3px
+      font-size 16px
+      font-weight normal
+      display inline-block
+      white-space nowrap
+      color #fff
+    p
+      margin 0
+      font-size 10px
+      display block
+      color #fff
+    img
+      display inline-block
+
+  .bch-pp-notificaciones
+    width 38px
+    height 30px
+    margin 10px auto 0
+    display block
+    position relative
+    background url('images/bancoChile/ico-email-md.png') no-repeat bottom center
+    .bch-pp-cantidad-notificaciones
+      width 22px
+      height 22px
+      position absolute
+      top 0
+      right -5px
+      padding-top 1px
+      -moz-border-radius 50%
+      -webkit-border-radius 50%
+      border-radius 50%
+      text-align center
+      font-size 14px
+      font-weight bold
+      color #fff
+      background-color #ef6001
+      -webkit-transition all 0.25s ease-in-out
+      -moz-transition all 0.25s ease-in-out
+      -o-transition all 0.25s ease-in-out
+      transition all 0.25s ease-in-out
+      &:hover
+        background-color #fff
+        color #ef6001
+  .bch-pp-salir-cuenta
+    font-size 14px
+    display block
+    margin 17px auto 0
+    text-align center
+    color #fff
+  .bch-pp-datos-usuario
+    width 87%
+
+
+.bch-pp-header-botonera
+  & > .row
+    background-color #f7f7f7
+    &:before
+      height 4px
+      width 100%
+      content ''
+      background-color #194b80
+      border-top solid 1px #2f5d8c
+      border-bottom solid 1px #2f5d8c
+
+  .col-md-12
+    padding-left 0
+    padding-right 0
+
+  .bch-pp-ico-home
+    float left
+    background-color #EBEBEB
+    width 46px
+    line-height 43px
+    text-align center
+    border-left solid 1px #d5d5d3
+    border-right solid 1px #d5d5d3
+
+  .bch-pp-btn-nav
+    color #4A4A4A
+    font-size 16px
+    border-right solid 1px #d5d5d3
+    line-height 1.8
+    border-radius 0px
+    background-color #F7F7F7
+    margin-left 7px
+  .bch-pp-ico-nav
+    background-image url('images/bancoChile/ico-nav.png')
+    background-color transparent
+    width 14px
+    height 8px
+    margin-left 5px
+    line-height 1.8
+    display inline-block
+
+
+
+@media (max-width: 992px) 
+  .bch-pp-barra-top
+    img
+      display none
+    a
+      letter-spacing  -1px
+
+  .bch-pp-header-middle
+    a.bch-pp-logo-header
+      h1
+        margin-top 29px

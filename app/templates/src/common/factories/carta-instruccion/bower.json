@@ -1,0 +1,19 @@
+{
+  "name": "orion-carta-instruccion-service",
+  "version": "0.0.2",
+  "authors": [
+    "equipo verde"
+  ],
+  "description": "Servicios carta instruccion",
+  "main": "*",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,40 @@
+<header class="head-demo" ui-scrollfix="+180">
+    <section class="container">
+    	<a href="/URLWeb/LogoutSrv?tipoAcceso=1" class="logout"></a>
+        <img src="assets/images/head.jpg" class="normal" alt="">
+    </section>
+    <section class="menu">
+    	<div class="container">
+	    	<ul class="col-lg-12">
+	    		<li><a href="#">Inicio</a></li>
+	    		<li><a href="#">Cuenta</a></li>
+	    		<li class="drop-toggle">
+		    		<a href="#">Trasferencias</a>
+					<ul class="drop-menu">
+						<li><a href="#/carta_instruccion">Inscribir Cartas</a></li>
+						<li><a href="#/inscriptor-control">Ver Cartas </a></li>
+						<li><a ui-sref="transferencias">Transferencias</a></li>
+					</ul>
+	    		</li>
+	    		<li><a href="#">Pagos</a></li>
+	    		<li><a href="#">Recaudaciones</a></li>
+	    		<li><a href="#">Financiamiento</a></li>
+	    		<li><a href="">Inversi&oacute;n</a></li>
+	    		<li><a href="">Tarjeta de Cr&eacute;dito</a></li>
+	    		<li><a href="">Otros Servicios</a></li>
+	    		<li><a href=""><input type="text"></a></li>
+	    		<br class="clearfix">
+	    	</ul>
+    	</div>
+    </section>
+</header> <!-- END HEADER -->
+
+
+
+<section class="container">	
+	<ol class="breadcrumb">
+	    <li><a href="#">Inicio </a></li>
+	    <li class="active">Instrucciones Digitales</li>
+	    <span class="date-bread">{{::fecha | date : 'longDate'}}</span>
+	</ol><!--/.breadcrumbs-->
+</section>

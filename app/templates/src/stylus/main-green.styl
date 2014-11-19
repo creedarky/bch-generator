@@ -1,0 +1,1161 @@
+@import 'nib'
+@import 'base-empresas/main.styl'
+
+$animation = slide
+@keyframes {$animation}
+    0%
+        top 0
+    50%
+        top -180px
+    100%
+        margin-top 200
+
+$right = slideRight
+@keyframes {$right}
+    0%
+        opacity 0
+        transform translate3d(100%, 0, 0)
+    100%
+        opacity 1
+        transform none
+
+$left = slideLeft
+@keyframes {$left}
+    0%
+        opacity 1
+        transform none
+    100%
+        opacity 1
+        transform translate3d(100%, 0, 0)
+        
+.animate-fadeInRight
+    &.ng-enter
+        animation $right 0.3s linear
+    &.ng-leave
+        animation $left 0.3s linear
+
+body
+    background white-color
+.container
+    max-width 1170px
+.clearfix
+    clear both
+    float none
+.title
+    margin-top 0
+    margin-bottom 20px
+.head-demo
+    background corporative-blue
+    height auto
+    margin 0 0 20px 0
+    width 100%
+    border-bottom 0px
+    overflow visible
+    .logout
+        background transparent
+        position absolute 
+        top 0
+        right 5%
+        display inline-block
+        width 30px
+        height 45px
+    .fix
+        display none
+    .menu
+        background grei-four
+        color grei-one
+        ul
+            list-style-type none
+            padding 0
+            margin-bottom 0px
+            li
+                float left
+                margin 0
+                padding 0
+                a
+                    padding 0px 12px
+                    display block
+                    color grei-one
+                    border-left 1px solid grei-two
+                    transition all ease .2s
+                    height: 35px;
+                    line-height: 35px;
+                    position relative
+                    input[type="text"]
+                        height 25px
+                        margin-top 5px
+                        display inline-block
+                    span 
+                        margin 0px
+                    &:hover
+                        text-decoration none
+                        background grei-three  
+                        .drop-menu
+                            display block!important
+                            
+            li:last-child
+                border-left 1px solid grei-two
+    /*&.ui-scrollfix
+        background corporative-blue
+        height 65px
+        animation slide .5s ease!important 
+        .normal
+            display none 
+        .fix
+            display block*/
+.min-height
+    min-height 450px!important
+.drop-toggle
+    position relative
+    &:hover
+        .drop-menu
+            display block
+    .drop-menu
+        position absolute
+        top 100%
+        width 130%
+        background white-color
+        border 1px solid grei-three
+        display none
+        li
+            display block!important
+            width 100%
+            a
+                color grei-one!important
+                display block!important
+                border none!important
+                padding 5px 15px!important
+                background white-color!important
+                &:hover
+                    color corporative-blue!important
+                    background white-color!important
+        li:last-child a
+            border none!important
+            
+.form-steps
+    padding-bottom 10px
+    border-left 1px solid corporative-blue
+    position relative
+    h2
+        margin-top 0px
+    &:before
+        position absolute 
+        top 0
+        left -12px
+        width 25px
+        height 25px
+        color corporative-blue
+        display block
+        border 1px solid corporative-blue
+        border-radius 50%
+        z-index 110
+        background white-color
+    &:nth-child(1)
+        border 0px solid corporative-light-grei
+        padding-left 0px
+        overflow-x hidden
+        input[type="radio"]
+            margin-right 10px
+        .check-element
+            background corporative-light-grei
+            padding-bottom 5px
+            label
+                color grei-one
+                padding-left 15px
+                font-size 12px
+                input[type="radio"]
+                    margin-right 10px
+    &:nth-child(2)
+        &:before
+            content '1'  
+            text-align center
+            line-height 25px
+    &:nth-child(3)
+        &:before
+            content '2'  
+            text-align center
+            line-height 25px
+    &:nth-child(4)
+        border 0px solid corporative-light-grei
+        &:before
+            content '3'  
+            text-align center
+            line-height 25px
+    section
+        margin-bottom 20px
+        .ui-select-bootstrap
+            button.ui-select-match
+                font-size 12px
+                &:hover
+                    background #fff
+        .dropdown-menu
+            background #fff
+            font-size 12px
+            li
+                div a
+                    font-size 12px
+                    padding 5px 10px
+                    color grei-one
+                    border-bottom 1px solid corporative-light-grei
+                div.active a
+                    background corporative-light-grei
+                    color grei-one
+        .apoderados-select
+            list-style-type none
+            font-size 12px
+            li
+                transition all ease .2s
+                padding 7px 0
+                line-height 0px
+                img
+                    display inline-block 
+                    width 25px
+                    height auto
+                    margin-right 10px
+                .icon-mobile
+                    float right
+                    font-size 28px
+                    color grei-two
+                .icon-desktop
+                    float right
+                    font-size 22px
+                    margin-top 3px
+                    color grei-two
+                .icon-cross
+                    float right
+                    font-size 20px
+                    margin-top 3px
+                    opacity 0
+                    color atention-color
+                    cursor pointer
+                &:hover
+                    background corporative-light-grei
+                    .icon-cross
+                        opacity 1                    
+        .info-box
+            font-size 12px
+            margin 5px
+            color grei-two
+            line-height 120%
+        .nota
+            color grei-one
+            font-size 11px
+            text-align justify
+            background corporative-light-grei
+            padding 15px
+        .observacion-alert, p.min
+            font-size 12px
+            font-weight normal
+    .cursor 
+        cursor pointer
+        margin-top 0px
+    .step-one,.step-two,step-three
+        margin 0
+        p
+            display inline-block
+            vertical-align middle
+            margin 10px 0px
+        .progress
+            margin-right 10px
+    p.canvas
+        padding-bottom: 10px;
+        border: #e1e1e1 1px solid;
+        border-radius: 3px;
+        background: #fff;
+        padding-top: 10px;
+        min-height: 35px;
+        margin-bottom: 5px;
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px 10px 10px;
+        margin: 0px 20px 15px 0;
+        font-size 12px
+        .icon-icon-pdf
+            font-size 28px
+            color grei-one
+            vertical-align middle
+        .cancel
+            color atention-color
+            position absolute
+            right -10px
+            top 30%
+            font-size 20px
+            background white-color
+            cursor pointer
+        .file-name
+            width 70%
+            margin-top 5px
+    .tag-list
+        list-style-type none
+        li
+            padding 7px 0
+            p
+                margin-bottom 0px
+                font-size 12px
+                span
+                    margin 0 10px
+                    color corporative-blue-thin
+                    font-size 20px
+                .cancel
+                    color atention-color
+                    font-size 20px
+                    background transparent
+                    cursor pointer
+        .head-list
+            padding 0
+            background white-color
+    .margin-extra-top
+        margin-top 30px
+.disabled
+    position relative
+    &:after
+        content ''
+        position absolute
+        top 0
+        left -15px
+        width 100%
+        right 0
+        bottom 0
+        background white-color
+        opacity .7
+        display block
+        z-index 110
+        
+//comprobante
+.confirmation-title
+    span
+        font-size 20px
+        &:hover
+            text-decoration none
+
+.comprobante
+    padding 0 15px 15px
+    margin-bottom 15px
+    h2
+        color corporative-blue-thin
+        margin 10px 0 5px 0
+        span
+            font-size 12px
+            color grei-one
+            margin-left 10px
+    h3
+        margin 0 0 15px 0
+    p
+        font-size 12px
+        text-align justify
+        padding 10px
+        background corporative-light-grei
+    ul
+        padding 0
+        list-style-type none
+        .date
+            font-size 12px
+        li
+            color grei-one
+            font-size 12px
+            background #fff
+            b
+                color corporative-blue
+                float left
+            p
+                float right
+                padding 0
+            &:nth-child(2n+1)
+                background corporative-light-grei
+.list-comprobante
+    li
+        padding 5px 0px
+        img
+            width 25px
+            margin-right 15px
+              
+    
+.modal-dialog
+    .modal-content
+        border-radius 0px
+        .modal-head
+            background #f7f7f7
+            padding 15px 15px
+            margin-bottom 10px
+            h2
+              margin-top 10px
+              margin-bottom 10px
+            h4
+                margin-bottom 0px
+            ul
+                padding 0
+                list-style-type none
+                li
+                    font-size 12px
+                    p
+                        margin 0
+                        font-size 12px
+                    .envio
+                        margin-left 10px
+            .borderStatusPositive
+                background positive-color
+            .borderStatusNegative
+                background atention-color
+            .borderStatusStandar
+                background informative-color
+        .modal-body
+            padding 0px 15px
+            color grei-one
+            overflow-x hidden
+            .ui-select-bootstrap
+                button.ui-select-match
+                    font-size 12px
+                    &:hover
+                        background #fff
+            .dropdown-menu
+                background #fff
+                font-size 12px
+                bottom 100%
+                top auto
+                li
+                    div a
+                        font-size 12px
+                        padding 5px 10px
+                        color grei-one
+                        border-bottom 1px solid corporative-light-grei
+                    div.active a
+                        background corporative-light-grei
+                        color grei-one
+            .icon-printing-big
+                font-size 30px
+                color grei-three
+                &:hover
+                    color informative-color
+            .comentario-btn
+                font-size 20px
+                color grei-two
+                cursor pointer
+                transition all ease .2s
+                div
+                    display none
+                &:hover
+                    color corporative-blue
+            .list-element-modal
+                ul
+                    padding 0
+                    list-style-type none
+                    li
+                        font-size 12px
+                        b
+                            float left
+                            color corporative-blue
+                        p
+                            float right
+                            font-size 12px
+                        &:nth-child(2n +1)
+                            background #f7f7f7
+            .panel-group
+                .panel
+                    .panel-heading
+                        .panel-title
+                            display block
+                            cursor pointer
+                            a
+                                display block
+                    .panel-body
+                        ul
+                            list-style-type none
+                            margin 0px
+                            li
+                                display block
+                                font-size 12px
+                                line-height 30px
+                                b
+                                    display inline-block
+                                    font-size 12px
+                                    color corporative-blue
+                                    font-weight 600
+                                    margin-right 15px
+                                p
+                                    display inline-block
+                                    float right
+                                    font-size 12px
+                                    text-align right
+                                    line-height 30px
+                                    margin 0px
+                                    padding-right 5px
+                                    .concepto-text
+                                        display none
+                                &:nth-child(2n +1)
+                                    background corporative-light-grei
+                            li.monto
+                                background transparent
+                                font-size 23px
+                                color informative-color
+                            
+            .modal-apoderado
+                display block
+                list-style-type none
+                padding 0
+                margin-bottom 15px
+                li
+                    font-size 12px
+                    line-height 30px
+                    transition all ease .2s
+                    display block
+                    img
+                        width 25px
+                        height auto
+                        display inline-block
+                        vertical-align middle
+                    .estados
+                        display inline-block
+                        vertical-align middle
+                    .cambio-apoderado
+                        button
+                            height 20px
+                            line-height 17px!important
+                            font-size 11px
+                            margin-top 4px
+                            float right
+                    .select-modal
+                        padding-left 0
+            .delete-post
+                position absolute
+                top 0
+                bottom 0
+                left 0
+                right 0
+                background rgba(255,255,255,.95)
+                z-index 99
+                p
+                    text-align center
+                    color grei-one
+                    font-size 25px
+                    padding 80px
+                    line-height 130%
+                    small
+                        display block
+                        color atention-color
+                        margin 20px 0
+            .btn
+                margin-right 5px
+            .nomargin
+                margin-bottom 0px
+                height 25!important
+                line-height 25px!important
+            .digipass-action
+                height 30px
+                margin-bottom 15px
+                margin-bottom 15px
+                display inline-block
+                input
+                    background white-color
+                    border border-element
+                    box-shadow none
+                    font-size 14px
+                    color #222
+                    margin-right 10px
+                    padding-left 15px
+                    height 30px
+                    line-height 30px
+                    resize none 
+            .rejection-post
+              p
+                font-size 12px
+            .pdf-box
+                float right
+                padding-right 0px
+                margin 20px auto 
+                iframe
+                    width 100%
+                    height 400px
+            .pdf-box-visualizacion
+                margin 20px auto 
+                width 80%
+                float none
+                iframe
+                    width 100%
+                    height 400px
+            .posts
+                position absolute
+                top 0
+                bottom 0
+                left 0
+                right 0
+                background rgba(255,255,255,1)
+                z-index 99
+                padding 0 0px 15px
+                h3
+                    padding-left 15px
+                .media-list
+                    li.media
+                        border-bottom 1px solid grei-three
+                        transition all ease .2s
+                        margin-top 0px
+                        margin-bottom 0px
+                        padding 10px 15px
+                        &:hover
+                            background corporative-light-grei
+                        p
+                            font-size 12px
+                            font-weight 400
+                        h4
+                            font-size 16px
+                            font-weight 300
+                            text-transform capitalize
+                        figure
+                            width 40px
+                            height 40px
+                            border-radius 50%
+                            overflow hidden
+                            float left
+                            background url('../assets/images/perfil.jpg')
+                            background-size cover
+                        small
+                            font-size 10px
+                            color corporative-blue-thin
+                    li.comentar
+                        padding-left 70px
+                        border-bottom 0px
+        .modal-footer
+            overflow-x hidden
+            text-align left
+            .select-rechazo
+                margin-right 15px
+            .icon-printing-big, .comentario-btn
+                font-size 20px
+                line-height 30px
+                margin-right 5px
+                margin-left 5px
+                color grei-two
+                cursor pointer
+                position relative
+                .badge-comment
+                    position absolute
+                    top 0
+                    right 0
+                    width 16px
+                    height 16px
+                    background informative-color
+                    color #fff
+                    padding 0px
+                    font-size 10px
+                    line-height 16px
+                    border-radius 50%
+                    text-align center
+                &:hover
+                    color corporative-blue
+.contenido-transaction
+    padding-right 0px
+    .ui-select-bootstrap
+        button.ui-select-match
+            font-size 12px
+            &:hover
+                background #fff
+    .dropdown-menu
+        background #fff
+        font-size 12px
+        li
+            div a
+                font-size 12px
+                padding 5px 10px
+                color grei-one
+                border-bottom 1px solid corporative-light-grei
+            div.active a
+                background corporative-light-grei
+                color grei-one
+    .borderStatusPositive h4 .tag
+        padding 5px 10px
+        font-weight 300
+        color white-color
+        font-size 10px
+        background positive-color
+        float none
+        text-transform capitalize
+        height 20px
+        margin-top -3px
+        cursor pointer
+    .borderStatusNegative h4 .tag
+        color white-color
+        background atention-color
+        padding 5px 10px
+        font-weight 300
+        font-size 10px
+        float none
+        text-transform capitalize
+        height 20px
+        margin-top -3px
+        cursor pointer
+    .borderStatusStandar h4 .tag
+        color white-color
+        background informative-color   
+        padding 5px 10px
+        font-weight 300   
+        font-size 10px
+        float none
+        text-transform capitalize
+        height 20px
+        vertical-align middle
+        margin-top -3px
+        cursor pointer
+    .pill-box
+        .null
+            margin 0 5px 5px 0
+    article
+        padding-right 0px
+        margin-bottom 15px
+        padding-top 0px 
+        opacity .8
+        transition all ease .2s
+        .head-pill
+            background-color corporative-light-grei
+            border-bottom 1px solid grei-three
+            padding-top 10px
+            margin-bottom 10px
+            h4
+                margin 0px
+                padding 0px 15px 5px
+                .id
+                    font-size 12px
+                    float right
+                    color grei-one
+                    margin 0px 10px 0 0
+                    border-right 1px solid grei-two
+                    padding-right 10px
+                .titulo
+                    cursor pointer
+        h5
+            margin 0 0 10px
+        h3
+            padding 0 15px
+            margin 0
+            line-height 40px
+        .border-right
+            border-right 1px solid grei-four
+        ul
+            list-style-type none
+            li
+                display block
+                color grei-one
+                b
+                    display inline-block
+                    font-weight 600
+                    color corporative-blue
+                    margin 0
+                    font-size 12px
+                .moneda
+                    font-size: 12px;
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: 300;
+                .fecha
+                    display block
+            .btn-box
+                margin-top 20px
+                .icon-btn
+                    font-size 30px
+                    color grei-two
+                    cursor pointer
+                    position relative
+                    display inline-block
+                    width 100%
+                    text-align center
+                    div
+                        background informative-color
+                        width 18px
+                        height 18px
+                        color white-color
+                        font-size 11px
+                        border-radius 50%
+                        text-align center
+                        line-height 15px
+                        position absolute
+                        top -5px
+                        right 30%
+                        font-weight 600
+                    &:hover
+                        color corporative-blue-thin
+        &:focus
+            box-shadow 0px 0px 0px #fff
+            border none
+        &:hover
+            opacity 1
+            transition all ease .2s
+.margin-btn
+    margin-left 10px
+.sort-list
+    .form-group
+        label
+            padding 3px 15px
+            text-align left
+        div
+            .ui-select-bootstrap
+                button.ui-select-match
+                    font-size 12px
+                    &:hover
+                        background #fff
+            .dropdown-menu
+                background #fff
+                font-size 12px
+                li
+                    div a
+                        font-size 12px
+                        padding 5px 10px
+                        color grei-one
+                        border-bottom 1px solid corporative-light-grei
+                    div.active a
+                        background corporative-light-grei
+                        color grei-one
+.filtros
+    padding-top 0!important
+    margin-bottom 10px
+    h3
+        margin 0px
+        border-bottom 1px solid grei-three
+        padding 10px 15px
+        background corporative-light-grei
+        font-weight 300
+        font-size 16px
+    .field
+        margin 0        
+        padding 10px 15px 5px
+        border-bottom 1px solid grei-three
+        transition all ease .2s
+        &:hover
+            background corporative-light-grei
+        label
+            display block   
+            cursor pointer 
+            color grei-one
+            padding 0 
+            margin 0
+            font-size 14px
+            span
+                margin 0px
+        input[type="text"]
+            display block        
+            margin 10px 0
+        .ui-select-bootstrap
+            button.ui-select-match
+                font-size 12px
+                &:hover
+                    background #fff
+        .dropdown-menu
+            background #fff
+            font-size 12px
+            li
+                div a
+                    font-size 12px
+                    padding 5px 10px
+                    color grei-one
+                    border-bottom 1px solid corporative-light-grei
+                div.active a
+                    background corporative-light-grei
+                    color grei-one
+.acordeon-status
+    .panel-group
+        margin-bottom 20px
+        border-radius 4px
+        overflow hidden
+        border-top 1px solid grei-three
+        .panel
+            box-shadow 0px 0px 0px white-color
+            border-radius 0px
+            margin -2px 0 0 0!important
+            .panel-heading
+                background corporative-light-grei
+                h4.panel-title
+                    cursor pointer
+                    font-size 14px
+                    a .badge
+                        background grei-two
+                        color white-color
+                        line-height 14px
+                        font-size 12px
+                        font-weight 300
+                    .accordion-toggle:hover
+                        text-decoration none    
+            .panel-body
+                p
+                    font-size 13px
+                    a 
+                        color grei-one
+                        display block
+                        padding-left 15px
+                        cursor pointer
+                        transition all ease 0.2s
+                        position relative
+                        &:after
+                            content ''
+                            width 8px
+                            height 8px
+                            border-radius 50%
+                            background corporative-light-grei
+                            position absolute
+                            left 0
+                            top 5px
+                            display block
+                        &:hover
+                            text-decoration none
+                        span
+                            background transparent
+                            color grei-three
+                            font-weight 600
+        .mis-cartas
+            h4.panel-title 
+                a div.current .badge, a:hover .badge
+                    background corporative-blue
+            .panel-body
+                .en-proceso a.active span.badge, .en-proceso a:hover span.badge
+                    color informative-color
+                    text-decoration none
+                .en-proceso a.active:after, .en-proceso a:hover:after 
+                    background informative-color
+                .aprobada a.active span.badge, .aprobada a:hover span.badge
+                    color positive-color
+                    text-decoration none
+                .aprobada a.active:after, .aprobada a:hover:after 
+                    background positive-color
+                .rechazada a.active span.badge, .rechazada a:hover span.badge
+                    color atention-color
+                    text-decoration none
+                .rechazada a.active:after, .rechazada a:hover:after 
+                    background atention-color
+        .en-proceso, .todas
+            h4.panel-title 
+                a div.current .badge, a:hover .badge
+                    background informative-color
+            .panel-body
+                a.active span.badge, a:hover span.badge
+                    color informative-color
+                a.active:after, a:hover:after 
+                    background informative-color
+                
+                    
+        .eliminada, .rechazada, .caducada
+            h4.panel-title 
+                a div.current .badge, a:hover .badge
+                    background atention-color
+            .panel-body
+                a.active span.badge, a:hover span.badge  
+                    color atention-color  
+                a.active:after, a:hover:after 
+                    background atention-color
+        .ejecutada
+            h4.panel-title 
+                a div.current .badge, a:hover .badge
+                    background positive-color
+            .panel-body
+                a.active span.badge, a:hover span.badge  
+                    color positive-color
+                a.active:after, a:hover:after 
+                    background positive-color
+.alert-danger
+    position fixed
+    right 20px
+    bottom 20px
+
+
+
+//TEF PLANTILLA
+
+.tef
+    article.steps
+        border-left 1px solid corporative-blue
+        prosition relative
+        padding-left 30px
+        padding-bottom 30px
+        &:before
+            width 25px
+            height 25px
+            border 1px solid corporative-blue
+            background white-color
+            color corporative-blue
+            text-align center
+            line-height 25px
+            font-size 14px
+            position absolute
+            display block
+            top 0
+            left -12px
+            content attr(numero)
+            border-radius 50%
+        &:last-child
+            border-left 0px
+        h3
+            margin-top 3px
+        .drop-toggle
+            position relative
+            &:hover
+                .drop-menu
+                    display block
+            .drop-menu
+                position absolute
+                top 100%
+                width 130%
+                background white-color
+                border 1px solid grei-three
+                display none
+                li
+                    display block!important
+                    width 100%
+                    a
+                        color grei-one!important
+                        display block!important
+                        border none!important
+                        padding 5px 15px!important
+                        background white-color!important
+                        &:hover
+                            color corporative-blue!important
+                            background white-color!important
+                li:last-child a
+                    border none!important
+        .ui-select-bootstrap
+            button.ui-select-match
+                font-size 12px
+                &:hover
+                    background #fff
+        .dropdown-menu
+            background #fff
+            font-size 12px
+            li
+                div a
+                    font-size 12px
+                    padding 5px 10px
+                    color grei-one
+                    border-bottom 1px solid corporative-light-grei
+                div.active a
+                    background corporative-light-grei
+                    color grei-one
+        .apoderados-select
+            list-style-type none
+            font-size 12px
+            li
+                transition all ease .2s
+                padding 7px 0
+                line-height 0px
+                img
+                    display inline-block 
+                    width 25px
+                    height auto
+                    margin-right 10px
+                .icon-mobile
+                    float right
+                    font-size 28px
+                    color grei-two
+                .icon-desktop
+                    float right
+                    font-size 22px
+                    margin-top 3px
+                    color grei-two
+                .icon-cross
+                    float right
+                    font-size 20px
+                    margin-top 3px
+                    opacity 0
+                    color atention-color
+                    cursor pointer
+                &:hover
+                    background corporative-light-grei
+                    .icon-cross
+                        opacity 1                          
+              
+@media print
+    html, body
+        overflow visible
+    footer
+        opacity 0
+    header,.btn, .btn-white,.btn-blue,.sidebar,.contenido-transaction,.title-thanks, .print-btn
+        display none
+    .breadcrumb
+        font-size 0px
+        display none!important
+    .modal-backdrop
+        background-color #fff
+        overflow auto
+    .fade.in
+        opacity 1
+        overflow hidden
+    .modal-dialog
+        width 100%
+        .modal-body
+            padding-bottom 15px
+            .info-carta
+                ul
+                    li
+                        color #666
+                    b
+                        color corporative-blue
+                    p.observacion
+                        display inline-block
+                        vertical-align top
+                        width 620px
+                        color #666
+                    .ok
+                        color positive-color
+                    .rechazada
+                        color caution-color
+                    .en-espera
+                        color #646464
+                    .date
+                        color #999
+                    .id
+                        color #666
+                    .estado
+                        color #888
+                    .type
+                        h4
+                            color #646464
+                        p
+                            color #646464
+                    div.monto
+                        li
+                            p
+                                color #1466B3
+                    ul.apoderados-edit
+                        li
+                            border-bottom 0px
+                        h3
+                            color #646464
+    //Acordeon
+    .panel-group
+        .panel, .panel-default
+            .panel-collapse, .collapse
+                display block!important
+                height auto!important
+                .concepto-text
+                    display block!important
+
+.bch-pp-footer
+    background-color #F7F7F7
+    padding 48px 0 48px
+    .bch-pp-logo-footer
+        text-indent -99999px
+        background-image url('images/bancoChile/logo-bch.png')
+        background-repeat no-repeat
+        width 200px
+        height 32px
+    .bch-pp-tx-bottom
+        font-family 'HelveticaNeueW01-Thin',arial, helvetica
+        font-size 12px
+        color #4A4A4A
+    .bch-pp-h-acordeon
+        font-family arial, "helvetica"
+        font-size 14px
+        color #003772
+        text-align left
+        background-color #F7F7F7
+        width 100%
+        border-top-style none
+        border-right-style none
+        border-bottom-style solid
+        border-left-style none
+        line-height 30px
+        padding 0.3em
+        border-bottom-width 1px
+        border-bottom-color #7B97B4
+        &:focus
+          outline none
+    a
+        color #003772
+    .bch-pp-mar-top
+        margin-top 1em
+    .bch-pp-separador
+        border-left solid 1px #003772
+
